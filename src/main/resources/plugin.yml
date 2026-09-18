@@ -1,0 +1,24 @@
+name: GardenCosmetics
+version: '${project.version}'
+main: com.herasgarden.gardencosmetics.GardenCosmetics
+api-version: '26.2'
+author: Hera's Garden
+website: https://herasgarden.net
+description: Tebex-backed cosmetic entitlements, chat styles, particles, trails, and companions for The Garden SMP.
+depend: [GardenCore]
+
+commands:
+  donate:
+    description: Open the Garden SMP support store.
+    usage: /donate
+  cosmetics:
+    aliases: [cosmetic]
+    description: View and configure your Garden cosmetics.
+    usage: /cosmetics <status|donor|color|font|particles|grant|revoke>
+
+permissions:
+  gardencosmetics.use:
+    default: true
+  gardencosmetics.admin:
+    description: Grant and revoke Garden cosmetic entitlements.
+    default: op

@@ -1,0 +1,34 @@
+tebex:
+  # Set this to the public Garden SMP Tebex storefront before launch.
+  store-url: ""
+
+entitlements:
+  donor: "support.donor"
+  chat-hex: "chat.hex"
+  chat-font: "chat.font"
+  particles-custom: "particles.custom"
+
+fonts:
+  allowed:
+    - "garden:classic"
+    - "garden:clean"
+
+particles:
+  allowed:
+    - "DUST"
+    - "HAPPY_VILLAGER"
+    - "END_ROD"
+    - "CHERRY_LEAVES"
+    - "FALLING_SPORE_BLOSSOM"
+    - "GLOW"
+    - "ELECTRIC_SPARK"
+    - "SOUL_FIRE_FLAME"
+    - "SNOWFLAKE"
+  formations:
+    - "point"
+    - "trail"
+    - "ring"
+    - "spiral"
+    - "halo"
+    - "burst"
+    - "rain"
