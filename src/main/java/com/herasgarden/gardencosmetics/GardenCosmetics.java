@@ -4,6 +4,7 @@ import com.herasgarden.gardencore.api.GardenPlatform;
 import com.herasgarden.gardencore.api.cosmetic.CosmeticProfileService;
 import com.herasgarden.gardencosmetics.command.CosmeticsCommand;
 import com.herasgarden.gardencosmetics.command.DonateCommand;
+import com.herasgarden.gardencosmetics.command.HatCommand;
 import com.herasgarden.gardencosmetics.particle.ParticleListener;
 import com.herasgarden.gardencosmetics.particle.ParticleService;
 import com.herasgarden.gardencosmetics.storage.CosmeticsSchema;
@@ -75,6 +76,11 @@ public final class GardenCosmetics extends JavaPlugin {
             if (cosmeticsCommand != null) {
                 cosmeticsCommand.setExecutor(command);
                 cosmeticsCommand.setTabCompleter(command);
+            }
+
+            PluginCommand hat = getCommand("hat");
+            if (hat != null) {
+                hat.setExecutor(new HatCommand());
             }
 
             PluginCommand donate = getCommand("donate");

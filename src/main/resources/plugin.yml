@@ -15,10 +15,18 @@ commands:
     aliases: [cosmetic]
     description: View and configure your Garden cosmetics.
     usage: /cosmetics <status|donor|color|font|particles|grant|revoke>
+  hat:
+    description: Wear the item in your main hand as a hat or remove your current hat.
+    usage: /hat [remove|off]
 
 permissions:
   gardencosmetics.use:
     default: true
   gardencosmetics.admin:
     description: Grant and revoke Garden cosmetic entitlements.
+    default: op
+  gardencosmetics.hat:
+    default: true
+  gardencosmetics.hat.bypass-binding:
+    description: Allow administrators to replace or remove Binding-cursed helmets with /hat.
     default: op
